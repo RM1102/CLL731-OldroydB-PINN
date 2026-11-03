@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "CLL731_OldroydB_PINN_bundle.zip"
 SKIP_DIRS = {".venv", "__pycache__", ".ipynb_checkpoints", "dev_runs", "_figs",
-             "notebook_demo", ".pytest_cache", ".claude"}
+             "notebook_demo", ".pytest_cache", ".claude", ".git"}
 SKIP_FILES = {OUT.name, ".DS_Store"}
 SKIP_SUFFIXES = {".running"}                      # lock files of runs in progress
 
