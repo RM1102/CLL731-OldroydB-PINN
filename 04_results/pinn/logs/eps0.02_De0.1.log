@@ -1,0 +1,17 @@
+training eps0.02_De0.1: PINNConfig(eps=0.02, beta_t=0.4, alpha=4.0, De=0.1, De_range=None, L_in=0.5, L_out=0.5, delta=0.03, width=64, depth=4, c_psi=0.1, De_floor=0.05, geo_features=1, ymom_power=2, norm_floor=0.1, lbfgs_rounds=3, lbfgs_device='cpu', n_points=4096, resample_every=50, adam_iters=2000, lr=0.0005, lr_final=2e-05, lbfgs_iters=900, lbfgs_points=8192, seed=0, device='cpu', init_from='/Users/rahulmasand/Desktop/IITD/sem 9 atp project/04_results/pinn/eps0.02_De0', tag='eps0.02_De0.1')
+[adam      0] loss=5.499e-01  z-mom=8.6e-05 Azz=1.6e-01 Ayy=3.7e-01 Ayz=1.9e-02 y-mom=4.4e-05  (2s)
+[adam    250] loss=1.144e-02  z-mom=1.2e-03 Azz=8.0e-04 Ayy=6.9e-03 Ayz=1.9e-03 y-mom=7.1e-04  (32s)
+[adam    500] loss=7.591e-03  z-mom=5.5e-04 Azz=5.9e-04 Ayy=4.7e-03 Ayz=1.2e-03 y-mom=5.3e-04  (62s)
+[adam    750] loss=6.490e-03  z-mom=4.1e-04 Azz=4.1e-04 Ayy=4.4e-03 Ayz=8.9e-04 y-mom=4.1e-04  (92s)
+[adam   1000] loss=5.045e-03  z-mom=2.7e-04 Azz=3.4e-04 Ayy=3.3e-03 Ayz=7.4e-04 y-mom=3.8e-04  (112s)
+[adam   1250] loss=4.345e-03  z-mom=2.1e-04 Azz=2.7e-04 Ayy=2.9e-03 Ayz=7.0e-04 y-mom=3.1e-04  (137s)
+[adam   1500] loss=4.108e-03  z-mom=1.9e-04 Azz=2.3e-04 Ayy=2.8e-03 Ayz=6.4e-04 y-mom=2.8e-04  (167s)
+[adam   1750] loss=3.753e-03  z-mom=1.6e-04 Azz=1.9e-04 Ayy=2.6e-03 Ayz=6.1e-04 y-mom=2.3e-04  (198s)
+[adam   1999] loss=3.403e-03  z-mom=1.5e-04 Azz=1.8e-04 Ayy=2.3e-03 Ayz=5.4e-04 y-mom=2.1e-04  (228s)
+[lbfgs      0] loss=3.389e-03  z-mom=1.5e-04 Azz=1.8e-04 Ayy=2.3e-03 Ayz=5.4e-04 y-mom=2.4e-04  (228s)
+[lbfgs    250] loss=7.474e-04  z-mom=9.0e-05 Azz=9.5e-05 Ayy=2.8e-04 Ayz=1.4e-04 y-mom=1.4e-04  (402s)
+[lbfgs    500] loss=4.553e-04  z-mom=5.8e-05 Azz=6.3e-05 Ayy=1.7e-04 Ayz=1.0e-04 y-mom=6.6e-05  (568s)
+[lbfgs    750] loss=3.357e-04  z-mom=3.8e-05 Azz=4.8e-05 Ayy=9.8e-05 Ayz=8.1e-05 y-mom=7.0e-05  (729s)
+[lbfgs    967] loss=2.736e-04  z-mom=3.1e-05 Azz=4.3e-05 Ayy=8.0e-05 Ayz=6.8e-05 y-mom=5.1e-05  (865s)
+done in 866s, held-out loss 3.384e-04
+  De=0.100: Delta P direct=0.85997 momentum=0.86165

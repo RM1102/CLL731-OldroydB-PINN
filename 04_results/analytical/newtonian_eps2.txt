@@ -1,0 +1,5 @@
+dp1/dZ = 3*(H(Z)*Derivative(H(Z), (Z, 2)) - 14*Derivative(H(Z), Z)**2)/(10*H(Z)**3)
+hyperbolic channel alpha = 4: Delta P = 255/256 + C eps^2 with C = 3.7430
+  eps = 0.02 -> 0.99759
+  eps = 0.1  -> 1.03352
+(smooth-geometry result; the corners add effects the expansion does not see)

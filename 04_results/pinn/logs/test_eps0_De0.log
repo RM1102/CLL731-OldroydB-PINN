@@ -1,0 +1,23 @@
+/Users/rahulmasand/Desktop/IITD/sem 9 atp project/03_code/oldroydb/pinn.py:309: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  hist["loss"].append(float(loss))
+training test_eps0_De0: PINNConfig(eps=0.0, beta_t=0.4, alpha=4.0, De=0.0, De_range=None, L_in=0.5, L_out=0.5, delta=0.01, width=64, depth=4, c_psi=0.1, De_floor=0.05, n_points=4096, resample_every=50, adam_iters=3000, lr=0.002, lr_final=2e-05, lbfgs_iters=500, lbfgs_points=8192, seed=0, device='cpu', init_from=None, tag='test_eps0_De0')
+[adam      0] loss=1.449e+00  z-mom=5.4e-01 y-mom=0.0e+00 Azz=0.0e+00 Ayy=6.8e-01 Ayz=2.3e-01  (2s)
+[adam    250] loss=5.445e-02  z-mom=2.0e-03 y-mom=4.6e-04 Azz=2.7e-05 Ayy=5.0e-02 Ayz=1.8e-03  (11s)
+[adam    500] loss=1.093e-02  z-mom=1.1e-03 y-mom=1.2e-04 Azz=4.2e-06 Ayy=9.4e-03 Ayz=3.1e-04  (21s)
+[adam    750] loss=3.350e-03  z-mom=6.3e-04 y-mom=5.2e-05 Azz=1.4e-06 Ayy=2.5e-03 Ayz=1.3e-04  (30s)
+[adam   1000] loss=2.152e-03  z-mom=4.5e-04 y-mom=3.6e-05 Azz=7.0e-07 Ayy=1.5e-03 Ayz=1.1e-04  (40s)
+[adam   1250] loss=1.739e-03  z-mom=3.9e-04 y-mom=2.8e-05 Azz=4.6e-07 Ayy=1.2e-03 Ayz=8.5e-05  (52s)
+[adam   1500] loss=1.442e-03  z-mom=3.3e-04 y-mom=2.7e-05 Azz=4.0e-07 Ayy=1.0e-03 Ayz=7.9e-05  (65s)
+[adam   1750] loss=1.193e-03  z-mom=3.2e-04 y-mom=2.2e-05 Azz=3.6e-07 Ayy=7.8e-04 Ayz=6.8e-05  (78s)
+[adam   2000] loss=1.036e-03  z-mom=3.1e-04 y-mom=1.9e-05 Azz=3.7e-07 Ayy=6.4e-04 Ayz=6.0e-05  (91s)
+[adam   2250] loss=9.305e-04  z-mom=3.0e-04 y-mom=1.8e-05 Azz=3.4e-07 Ayy=5.5e-04 Ayz=5.6e-05  (104s)
+[adam   2500] loss=9.826e-04  z-mom=2.9e-04 y-mom=1.5e-05 Azz=3.2e-07 Ayy=6.2e-04 Ayz=5.9e-05  (117s)
+[adam   2750] loss=8.476e-04  z-mom=2.8e-04 y-mom=1.5e-05 Azz=2.9e-07 Ayy=5.0e-04 Ayz=5.6e-05  (130s)
+[adam   2999] loss=8.014e-04  z-mom=2.7e-04 y-mom=1.4e-05 Azz=3.2e-07 Ayy=4.6e-04 Ayz=5.3e-05  (144s)
+[lbfgs      0] loss=8.594e-04  z-mom=2.7e-04 y-mom=1.3e-05 Azz=3.0e-07 Ayy=5.2e-04 Ayz=5.7e-05  (144s)
+[lbfgs    250] loss=2.245e-04  z-mom=1.3e-04 y-mom=4.3e-06 Azz=3.4e-07 Ayy=6.0e-05 Ayz=3.2e-05  (229s)
+[lbfgs    500] loss=1.400e-04  z-mom=7.5e-05 y-mom=2.2e-06 Azz=2.9e-07 Ayy=3.8e-05 Ayz=2.4e-05  (296s)
+[lbfgs    537] loss=1.299e-04  z-mom=6.8e-05 y-mom=2.2e-06 Azz=5.2e-07 Ayy=3.5e-05 Ayz=2.4e-05  (305s)
+done in 305s, held-out loss 1.328e-04
+  De=0.000: Delta P direct=0.99651 momentum=0.99584

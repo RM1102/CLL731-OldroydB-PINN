@@ -1,0 +1,26 @@
+# local Python environment and caches
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+# local tool settings
+.claude/
+# scratch and generated files
+*.zip
+*.running
+gui_selftest.png
+gui_snapshot.png
+pinn_*_De*.png
+05_notebook/_figs/
+05_notebook/_test_run*
+04_results/pinn/notebook_demo/
+# development runs kept locally only (documented in 02_plan, section 9)
+04_results/pinn/dev_runs/
+# the paper's PDF is the publisher's copyright: see 01_research/papers/README.md
+01_research/papers/*.pdf
+
+# LaTeX build files
+06_submission/*.aux
+06_submission/*.log
+06_submission/*.out

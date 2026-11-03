@@ -1,0 +1,11 @@
+skip eps0_De0 (already trained)
+skip eps0_De0.05 (already trained)
+skip eps0_De0.1 (already trained)
+skip eps0_De0.15 (already trained)
+skip eps0_De0.2 (already trained)
+train eps0_De0.25 ...
+  done: done in 414s, held-out loss 9.947e-05
+train eps0_De0.3 ...
+  done: done in 460s, held-out loss 1.151e-04
+skip eps0.02_De0 (already trained)
+train eps0.02_De0.1 ...

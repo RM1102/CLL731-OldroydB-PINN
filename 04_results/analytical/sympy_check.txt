@@ -1,0 +1,25 @@
+OK  (3.5)  dP0/dZ = -3/H^3
+OK  (3.6)  Uz0
+OK  (3.7)  Uy0
+OK  (3.8)  Ayy0
+OK  (3.8)  Ayz0
+OK  (3.14) dP1/dZ = 9/2 b d/dZ(1/H^4)
+OK  (3.13) Uz1 = 0
+OK  (3.16a) Azz1 = 18 Y^2/H^6
+XX  (3.16b) Ayz1 as printed in arXiv v1 (+18 H' ...)
+OK  (3.16b) Ayz1 with corrected sign (-18 H' ...)
+OK  (3.16c) Ayy1
+OK  (3.19) polymer force at O(De^2)
+OK  (3.21) dP2/dZ
+OK  (3.20) Uz2
+
+Hyperbolic channel, alpha = 4, beta_t = 0.4:
+  dP0 from direct O(De^n) momentum balance = +0.996094
+  dP1 from direct O(De^n) momentum balance = -1.792969
+  dP2 from direct O(De^n) momentum balance = +5.532589
+  dP3 from direct O(De^n) momentum balance = -14.661362
+  dP0 closed form in paper            = +0.996094
+  dP1 closed form in paper            = -1.792969
+  dP2 closed form in paper            = +5.532589
+  dP3 (5.2d) closed form in paper            = -14.661362
+  dP3 (4.14) closed form in paper            = -14.661362

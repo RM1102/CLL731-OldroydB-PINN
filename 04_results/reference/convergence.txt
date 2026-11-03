@@ -1,0 +1,9 @@
+Delta P of the eps -> 0 reference solver under refinement
+
+case                                                    De=0.1    De=0.2    De=0.3
+base: N=20, dZ=5e-3/1.5e-3, delta=0.01, L_out=0.5      0.86085   0.78195   0.73284
+N=28 (finer across)                                    0.86085   0.78195   0.73285
+dZ halved (finer along)                                0.86083   0.78193   0.73281
+delta=0.005 (sharper corners)                          0.86081   0.78188   0.73275
+delta=0.02 (rounder corners)                           0.86089   0.78202   0.73292
+L_out=1.0 (longer outlet)                              0.86085   0.78195   0.73284

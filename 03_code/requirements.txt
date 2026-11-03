@@ -1,0 +1,12 @@
+# Minimal set to run the notebook (CPU only; no GPU needed).
+# Install with:  pip install -r 03_code/requirements.txt
+numpy>=2.0
+scipy>=1.11
+matplotlib>=3.8
+torch>=2.2
+jupyter
+ipywidgets
+# only needed to re-run the research scripts (not the notebook):
+sympy>=1.12
+pymupdf>=1.24
+pytest

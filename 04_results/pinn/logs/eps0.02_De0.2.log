@@ -1,0 +1,17 @@
+training eps0.02_De0.2: PINNConfig(eps=0.02, beta_t=0.4, alpha=4.0, De=0.2, De_range=None, L_in=0.5, L_out=0.5, delta=0.03, width=64, depth=4, c_psi=0.1, De_floor=0.05, geo_features=1, ymom_power=2, norm_floor=0.1, lbfgs_rounds=3, lbfgs_device='cpu', n_points=4096, resample_every=50, adam_iters=2000, lr=0.0005, lr_final=2e-05, lbfgs_iters=900, lbfgs_points=8192, seed=0, device='cpu', init_from='/Users/rahulmasand/Desktop/IITD/sem 9 atp project/04_results/pinn/eps0.02_De0.1', tag='eps0.02_De0.2')
+[adam      0] loss=2.327e-01  z-mom=1.7e-01 Azz=1.6e-02 Ayy=3.2e-02 Ayz=1.4e-02 y-mom=1.0e-04  (3s)
+[adam    250] loss=3.303e-03  z-mom=2.6e-04 Azz=5.8e-04 Ayy=9.9e-04 Ayz=1.1e-03 y-mom=3.8e-04  (39s)
+[adam    500] loss=2.304e-03  z-mom=1.7e-04 Azz=3.4e-04 Ayy=6.7e-04 Ayz=8.5e-04 y-mom=2.8e-04  (77s)
+[adam    750] loss=1.691e-03  z-mom=1.4e-04 Azz=2.0e-04 Ayy=4.6e-04 Ayz=6.9e-04 y-mom=2.0e-04  (112s)
+[adam   1000] loss=1.578e-03  z-mom=1.3e-04 Azz=1.9e-04 Ayy=4.0e-04 Ayz=6.1e-04 y-mom=2.5e-04  (148s)
+[adam   1250] loss=1.539e-03  z-mom=1.3e-04 Azz=2.0e-04 Ayy=3.7e-04 Ayz=6.6e-04 y-mom=1.9e-04  (181s)
+[adam   1500] loss=1.548e-03  z-mom=1.2e-04 Azz=1.9e-04 Ayy=3.7e-04 Ayz=6.4e-04 y-mom=2.3e-04  (214s)
+[adam   1750] loss=1.307e-03  z-mom=1.1e-04 Azz=1.7e-04 Ayy=3.0e-04 Ayz=5.6e-04 y-mom=1.7e-04  (246s)
+[adam   1999] loss=1.261e-03  z-mom=1.1e-04 Azz=1.7e-04 Ayy=3.1e-04 Ayz=5.2e-04 y-mom=1.5e-04  (278s)
+[lbfgs      0] loss=1.355e-03  z-mom=1.2e-04 Azz=1.8e-04 Ayy=3.6e-04 Ayz=5.0e-04 y-mom=2.0e-04  (279s)
+[lbfgs    250] loss=7.365e-04  z-mom=8.8e-05 Azz=1.1e-04 Ayy=1.8e-04 Ayz=2.4e-04 y-mom=1.2e-04  (440s)
+[lbfgs    500] loss=5.616e-04  z-mom=6.5e-05 Azz=9.1e-05 Ayy=1.4e-04 Ayz=1.9e-04 y-mom=7.3e-05  (600s)
+[lbfgs    750] loss=4.334e-04  z-mom=4.1e-05 Azz=6.9e-05 Ayy=1.1e-04 Ayz=1.4e-04 y-mom=7.8e-05  (755s)
+[lbfgs    958] loss=3.745e-04  z-mom=3.7e-05 Azz=6.5e-05 Ayy=9.2e-05 Ayz=1.2e-04 y-mom=5.9e-05  (873s)
+done in 874s, held-out loss 4.370e-04
+  De=0.200: Delta P direct=0.77758 momentum=0.77969

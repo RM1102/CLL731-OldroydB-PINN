@@ -1,0 +1,5 @@
+Delta P of the eps -> 0 reference solver for three corner roundings (columns: De = 0, 0.1, 0.2, 0.3)
+
+delta 0.005 0.99610 0.86081 0.78188 0.73275
+delta 0.01 0.99607 0.86085 0.78194 0.73282
+delta 0.03 0.99582 0.86090 0.78208 0.73300
