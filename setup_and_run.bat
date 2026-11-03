@@ -59,9 +59,10 @@ if /i "%CHOICE%"=="gui" ( "%VPY%" gui.py & goto :end )
 if /i "%CHOICE%"=="notebook" ( "%VPY%" -m jupyter notebook 05_notebook\CLL731_OldroydB_PINN.ipynb & goto :end )
 if /i "%CHOICE%"=="test" (
   echo Quick check ^(about 10 seconds^) ...
-  "%VPY%" -m pytest -q 03_code\tests
-  "%VPY%" gui.py --selftest gui_selftest.png
-  "%VPY%" predict.py --case eps0.02 --De 0.2 --dp
+  "%VPY%" -m pytest -q 03_code\tests || goto :testfail
+  "%VPY%" gui.py --selftest gui_selftest.png || goto :testfail
+  "%VPY%" predict.py --case eps0.02 --De 0.2 --dp || goto :testfail
+  echo Quick check passed.
   goto :end
 )
 if /i "%CHOICE%"=="retrain" (
@@ -84,6 +85,10 @@ exit /b 0
 :fail
 echo Setup failed. Check your internet connection and run this file again.
 pause
+exit /b 1
+
+:testfail
+echo Quick check FAILED: see the messages above.
 exit /b 1
 
 :end
