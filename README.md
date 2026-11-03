@@ -4,7 +4,8 @@ CLL731 (Advanced Transport Phenomena) term paper · Rahul Arvind Masand (2022CH7
 
 We re-solve the problem of **Boyko & Stone (2022), *J. Fluid Mech.* 936, A23**: a polymer solution (Oldroyd-B fluid) is pushed through a narrow 2-D channel that contracts 4:1, and we want the pressure drop. We solve it with a **physics-informed neural network (PINN)** trained only on the flow equations, and check it against the paper's formulas, the paper's own simulations and an independent numerical solver we wrote.
 
-**Submission summary (2 pages):** [`06_submission/CLL731_term_paper_summary.pdf`](06_submission/CLL731_term_paper_summary.pdf)
+**Submission summary (2 pages):** [`06_submission/CLL731_term_paper_summary.pdf`](06_submission/CLL731_term_paper_summary.pdf)  
+**Presentation slides:** [`06_submission/slides/CLL731_OldroydB_PINN_slides.pptx`](06_submission/slides/CLL731_OldroydB_PINN_slides.pptx)
 
 ---
 
@@ -91,7 +92,7 @@ All numbers come from [`04_results/summary.md`](04_results/summary.md), generate
 | `03_code/tests/` | quick checks (`python -m pytest -q 03_code/tests`) |
 | `04_results/` | trained networks, reference solutions, recovered paper data, figures, `summary.md` |
 | `05_notebook/` | the main report: notebook and HTML copy |
-| `06_submission/` | the 2-page submission summary |
+| `06_submission/` | the 2-page submission summary and the presentation slides (`slides/`, with the scripts that build them) |
 | `gui.py`, `predict.py` | the explorer window and the command-line predictor |
 
 Re-running the research steps (from `03_code/scripts/`): `derive_perturbation_sympy.py` (5 s), `newtonian_eps2_correction.py` (5 s), `digitize_fe_data.py` (2 s; needs the paper PDF, see `01_research/papers/`), `run_reference_solver.py` (3 min), `run_campaign.py --chain all` (about 4 h), `finalize_deliverables.py` (2 min; rebuilds the summary, notebook, HTML, figures and zip).
