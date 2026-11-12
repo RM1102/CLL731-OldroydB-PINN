@@ -20,6 +20,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
+      - name: Create the environment with the chosen Python (a PC with only this version)
+        shell: bash
+        run: python -m venv .venv
       - name: One-command setup and quick check (Windows)
         if: runner.os == 'Windows'
         shell: cmd
