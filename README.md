@@ -34,7 +34,7 @@ cd CLL731-OldroydB-PINN
 bash setup_and_run.sh
 ```
 
-No `git`? Click **Code → Download ZIP** on this page, unzip it, and double-click `setup_and_run.bat` (Windows) or `setup_and_run_mac.command` (Mac).
+No `git`? Click the green **<> Code** button on this page, then **Download ZIP**, and unzip it. Then double-click `setup_and_run.bat` (Windows; if a blue "Windows protected your PC" box appears, click **More info → Run anyway**) or right-click `setup_and_run_mac.command` and choose **Open** (Mac; a plain double-click is blocked the first time for downloaded scripts).
 
 The script creates a private Python environment inside the folder (`.venv`; nothing is installed system-wide), installs the packages, and then offers a menu:
 
