@@ -1,5 +1,5 @@
-# Runs the one-command setup on fresh Windows and macOS machines, exactly as a
-# user would, then checks the notebook, the predictor and the GUI backend.
+# Runs the one-command setup on a fresh machine, exactly as a user would, then
+# checks the notebook, the predictor and the GUI backend.
 name: setup-test
 on:
   push:
@@ -10,17 +10,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest]
-        omp: ["default", "1"]
+        include:
+          - os: windows-latest
+            python: "3.14"
     runs-on: ${{ matrix.os }}
     timeout-minutes: 30
-    env:
-      OMP_NUM_THREADS: ${{ matrix.omp == '1' && '1' || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python }}
       - name: One-command setup and quick check (Windows)
         if: runner.os == 'Windows'
         shell: cmd
@@ -33,12 +32,8 @@ jobs:
         run: |
           PY=.venv/bin/python
           if [ -f .venv/Scripts/python.exe ]; then PY=.venv/Scripts/python.exe; fi
+          $PY --version
           $PY -m jupyter nbconvert --execute --to notebook --ExecutePreprocessor.timeout=240 --output executed.ipynb 05_notebook/CLL731_OldroydB_PINN.ipynb
           $PY -c "import nbformat; nb = nbformat.read('05_notebook/executed.ipynb', 4); e = [o.ename for c in nb.cells if c.cell_type == 'code' for o in c.get('outputs', []) if o.output_type == 'error']; print('notebook errors:', e); assert not e"
           $PY predict.py --case eps0.02 --De 0.2 --dp --point 0.5 0.3
           $PY -c "import matplotlib, matplotlib.pyplot; print('GUI window backend:', matplotlib.get_backend())"
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: gui-selftest-${{ matrix.os }}-omp-${{ matrix.omp }}
-          path: gui_selftest.png
