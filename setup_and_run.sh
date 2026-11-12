@@ -13,16 +13,16 @@
 set -e
 cd "$(dirname "$0")"
 
-# ---- find a Python between 3.10 and 3.13 (the range PyTorch supports well)
+# ---- find a Python between 3.10 and 3.14 (all tested with PyTorch)
 PY=""
-for c in python3.12 python3.11 python3.13 python3.10 python3; do
+for c in python3.12 python3.13 python3.14 python3.11 python3.10 python3; do
   if command -v "$c" >/dev/null 2>&1 && "$c" -c \
-     'import sys; sys.exit(0 if (3, 10) <= sys.version_info[:2] <= (3, 13) else 1)' 2>/dev/null; then
+     'import sys; sys.exit(0 if (3, 10) <= sys.version_info[:2] <= (3, 14) else 1)' 2>/dev/null; then
     PY="$c"; break
   fi
 done
 if [ -z "$PY" ]; then
-  echo "Python 3.10 to 3.13 was not found."
+  echo "Python 3.10 to 3.14 was not found."
   echo "Install it from https://www.python.org/downloads/ and run this script again."
   exit 1
 fi

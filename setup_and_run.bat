@@ -13,18 +13,18 @@ REM installed system-wide; delete the .venv folder to remove it all.
 setlocal
 cd /d "%~dp0"
 
-REM ---- find a Python between 3.10 and 3.13 (the range PyTorch supports well)
+REM ---- find a Python between 3.10 and 3.14 (all tested with PyTorch)
 set "PY="
-for %%V in (3.12 3.11 3.13 3.10) do (
+for %%V in (3.12 3.13 3.14 3.11 3.10) do (
   if not defined PY (
     py -%%V -c "import sys" >nul 2>&1 && set "PY=py -%%V"
   )
 )
 if not defined PY (
-  python -c "import sys; sys.exit(0 if (3, 10) <= sys.version_info[:2] <= (3, 13) else 1)" >nul 2>&1 && set "PY=python"
+  python -c "import sys; sys.exit(0 if (3, 10) <= sys.version_info[:2] <= (3, 14) else 1)" >nul 2>&1 && set "PY=python"
 )
 if not defined PY (
-  echo Python 3.10 to 3.13 was not found.
+  echo Python 3.10 to 3.14 was not found.
   echo Install it from https://www.python.org/downloads/ ^(tick "Add python.exe to PATH"^)
   echo and run this file again.
   pause

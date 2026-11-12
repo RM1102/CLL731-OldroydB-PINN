@@ -16,7 +16,7 @@ We re-solve the problem of **Boyko & Stone (2022), *J. Fluid Mech.* 936, A23**: 
 
 ## 2. Run it on your own computer (one command)
 
-You need **Python 3.10–3.13** ([python.org](https://www.python.org/downloads/); on Windows tick *"Add python.exe to PATH"*). No GPU is needed.
+You need **Python 3.10 or newer** (3.10–3.14 tested) ([python.org](https://www.python.org/downloads/); on Windows tick *"Add python.exe to PATH"*). No GPU is needed.
 
 **Windows** (Command Prompt or PowerShell):
 
