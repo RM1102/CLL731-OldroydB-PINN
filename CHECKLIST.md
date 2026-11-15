@@ -24,7 +24,7 @@ Status marks: `[x]` done and verified (how, in brackets) · `[ ]` open · `[~]` 
 - [x] 2026-11-15 No result or plot from the journal article in the Results section (plagiarism rule) (all 8 figures made by make_report_figures.py from our runs; FE values mentioned in text only, cited)
 - [~] 2026-11-15 If the zip is over the size limit: article and report on Moodle, everything by email or Google Drive before the deadline (15 Nov EoD) (fallback CLL731_2022CH71476_Rahul_Masand_article_report.zip, 4.9 MB, ready; the upload and any email/Drive send are Rahul's to do)
 - [x] 2026-11-15 "Compact your context" (cannot be triggered by Claude; context compaction happened automatically)
-- [ ] 2026-11-15 Commit and push the report and builder to GitHub (waiting for Rahul's go-ahead)
+- [x] 2026-11-15 Commit and push the report and builder to GitHub (Rahul said "Yes, push now"; commit 481f5d1 on origin/main, report folder visible via GitHub API)
 
 ## Feedback
 
